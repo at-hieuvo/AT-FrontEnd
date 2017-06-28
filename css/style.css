@@ -1,104 +1,195 @@
+body {
+  font: 100% Myriad Pro; }
 
-*{
-	margin: 0px;
-	font-family: "Arial";	
-	box-sizing: border-box;
-}
-a{
-	text-decoration: none;
-}
-a:hover{
-	color: green;
-}
+a {
+  text-decoration: none; }
+
+* {
+  margin: 0px;
+  font-family: "Myriad Pro";
+  box-sizing: border-box; }
 
 ul li {
-	list-style: none;
-}
-.container{
-	max-width: 1240px;
-	margin: 0px 160px;
-}
-header{
-	margin-top:10px; 
-}
-.logo-left {
-	float: left;
-}
+  list-style: none; }
+
+.container {
+  max-width: 1240px;
+  margin: 0px 130px; }
 
 .clear:after {
-	clear: both;
-	content: "";
-	display: table;
+  clear: both;
+  content: "";
+  display: table; }
 
-}
-.logo-left img{
-	float: left;
-}
-.logo-right{
-	float: left;
-	margin: 10px 10px 10px 10px;
-}
-.header-right{
-	float: right;
-	margin: 20px 0px 0px 0px;
-}
-.logo-right .name{
-	font-weight: bold;
-	font-size: 20px;
-}
-.logo-right .title{
-	font-size: 16px;
-	margin: 5px 0px 0px 16px;
-}
-.header-right img{
-	margin: 0px 5px -10px 0px;
-}
-.header-right .phone-number{
-	font-size: 18px;
-	color: #4cc1fc;
-	margin-left: 5px;
-}
-.menu{
+.item:nth-child(3n+1) {
+  clear: left; }
+
+header {
+  margin-top: 10px;
+  margin-bottom: 40px; }
+  header .logo .logo-left {
+    float: left; }
+    header .logo .logo-left img {
+      float: left; }
+  header .logo .logo-right {
+    float: left;
+    margin: 10px; }
+    header .logo .logo-right .name {
+      font-weight: bold;
+      font-size: 20px; }
+    header .logo .logo-right .title {
+      font-size: 16px;
+      margin: 5px 0px 0px 16px; }
+  header .header-right {
+    float: right;
+    margin-top: 20px; }
+    header .header-right img {
+      margin: 0px 5px -10px 0px; }
+    header .header-right .phone-number {
+      font-size: 18px;
+      color: #4cc1fc;
+      margin-left: 5px; }
+
+.menu {
   border-top: 1px solid #8e8e8e;
   width: 100%;
-  margin: 13px 0px 0px 0px;
-}
-.nav-menu-left ul li{
-	float: left;
-	padding: 13px 19px ;
-	border-right: 1px solid #8e8e8e;
-	margin-bottom: : 10px
-}
-.nav-menu-left ul li a{
-	font-size: 12px;
-	color: #8e8e8e;
-}
-.nav-menu-left a:hover{
-	color:;
-}
-.social-network{
-	float: right;
-	margin: 10px 0px 0px 0px;
-}
-.social-network ul li{
-	float: right;
-	padding-right:10px;
-}
-.banner{
-	background-image: url(../images/banner.jpg);
-	height: 30%;
-	width: 100%;
-	background-repeat: no-repeat;
-}
-.in-page{
-	padding-top: 70px;
-}
-.in-page a{
-	color: #0d1d25;
-	font-size: 12px;
-	font-weight: normal;
-}
-aside{
-	width: 25%;
-	/*float: right;*/
-}
+  margin-top: 13px; }
+  .menu .nav-menu-left ul li {
+    float: left;
+    padding: 13px 19px;
+    border-right: 1px solid #8e8e8e;
+    margin-bottom: 10px; }
+    .menu .nav-menu-left ul li a {
+      font-size: 12px;
+      color: #8e8e8e; }
+    .menu .nav-menu-left ul li a:hover {
+      color: red; }
+  .menu .social-network {
+    float: right;
+    margin-top: 10px; }
+    .menu .social-network ul li {
+      float: right;
+      padding-right: 10px; }
+
+.banner {
+  background-image: url(../images/banner.jpg);
+  height: 30%;
+  width: 100%;
+  background-repeat: no-repeat; }
+  .banner .in-page {
+    padding-top: 70px; }
+    .banner .in-page a {
+      color: #0d1d25;
+      font-size: 12px;
+      font-weight: normal; }
+
+aside {
+  width: 23%;
+  float: left;
+  margin-right: 1%; }
+  aside .list-sick .name-people {
+    background-color: #d9e4e9; }
+    aside .list-sick .name-people p {
+      color: #0d1d25;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 10px;
+      float: left; }
+    aside .list-sick .name-people img {
+      float: right;
+      margin: 10px 13px; }
+  aside .list-sick ul li {
+    list-style: disc;
+    margin-left: 25px;
+    padding: 7px 0px; }
+    aside .list-sick ul li a {
+      font-size: 13px;
+      color: #30393f; }
+    aside .list-sick ul li a:hover {
+      color: blue;
+      font-size: 15px; }
+  aside .form-calendar {
+    margin-top: 30px;
+    background-color: #d9e4e9;
+    padding: 10px;
+    text-align: center; }
+    aside .form-calendar p {
+      color: #0d1d25;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #4bbc56;
+      padding: 7px 0px 12px 10px;
+      text-align: left; }
+    aside .form-calendar input {
+      margin: 8px;
+      height: 6%;
+      width: 90%; }
+    aside .form-calendar input[type="submit"] {
+      background-color: #4bbc56;
+      height: 8%;
+      width: 45%;
+      color: white; }
+
+.col-main {
+  float: right;
+  width: 76%; }
+  .col-main .item {
+    float: left;
+    width: 33%;
+    height: 45%;
+    padding: 0 10px;
+    border: 0.2px solid #ebebeb;
+    margin-bottom: 18px;
+    position: relative; }
+    .col-main .item .image {
+      width: 100%; }
+    .col-main .item .description a {
+      color: #282828;
+      font-size: 16px;
+      padding: 6px 4px; }
+    .col-main .item .description a:hover {
+      color: blue;
+      font-size: 17px; }
+    .col-main .item .description p {
+      color: #282828;
+      font-size: 13px; }
+    .col-main .item a img {
+      margin-top: 30px;
+      position: absolute;
+      right: 0;
+      border-bottom: 0; }
+      .col-main .item a img:hover {
+        zoom: 150%; }
+
+footer {
+  background-color: #62c6f8;
+  width: 100%;
+  padding: 30px 130px 15px 130px; }
+  footer .information .footer-row {
+    float: left;
+    width: 33%;
+    margin-bottom: 10px; }
+    footer .information .footer-row p {
+      color: white;
+      font-size: 17px;
+      font-weight: bold; }
+    footer .information .footer-row ul {
+      padding-left: 20px; }
+      footer .information .footer-row ul li {
+        margin-top: 14px;
+        list-style: disc; }
+        footer .information .footer-row ul li a {
+          color: white;
+          font-size: 12px;
+          line-height: 20px; }
+    footer .information .footer-row .footer-social li {
+      list-style: none; }
+  footer .copyright {
+    padding-top: 15px;
+    color: white;
+    font-size: 14px;
+    border-top: 1px solid #81d1f9; }
+    footer .copyright .cp-left {
+      float: left; }
+    footer .copyright .cp-right {
+      float: right; }
